@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+::selection {
+    background:#FD46B3;
+  }
+ul:not(.bolded-ul){
+    list-style: none;
+}
+a:visited{
+    color:inherit
+}
+.pink-btn{
+    padding: 15px 30px;
+    background-color:#FF42B3;
+    border-radius: 5px;
+}
+.pink-btn:hover{
+    background-color: black;
+    transition:0.3s ;
+}
+.background{
+    background-image: url("./assets/matt-botsford-197870-unsplash.jpg");
+    background-color: #cccccc;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: -1000;
+    top: -1px;
+}
+.background::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(1deg, rgba(240, 140, 194, 0.43) 1%, rgba(145, 87, 226, 0.71) 99%);
+}
+section:not(.cta-container){
+    margin-bottom: 100px;
+}
+section,footer,header{ 
+    display: flex;
+    justify-content: center;
+}
+header{
+    margin-bottom: 30px;
+}
+header ul>li:hover::before{
+   border-top: 1px solid white;
+}
+.intro{
+    max-width: 600px;
+    color: white;
+}
+.intro h1{
+    font-size: 65px;
+    margin-bottom: 30px;
+    font-weight: 1000;
+}
+.intro h4{
+    margin-bottom: 70px;
+}
+.intro ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+container{
+    max-width: 1240px;
+    min-width: 1240px;
+}
+section{
+    margin-bottom: 200px; 
+}
+.nav-bar{
+    display: inline-block;
+
+}
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+}
+.nav-bar li{
+    margin-right:50px;
+    color: white; 
+}
+
+.nav-section{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.section{
+    display: flex;
+}
+.small-header{
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color:#FF42B3;
+    text-transform: uppercase;
+}
+.big-header{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.voice-buttons{
+    padding:10px;
+    color: #BA7CE9;
+    background-color: #FCE5F9;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: 900;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+audio{
+    width: 500px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.bolded-ul{
+    list-style-image: url('./assets/icons/tick-mark.png');
+    line-height: 30px;
+    margin-top: 30px;
+    font-weight:900;
+    margin-left: 22px;
+}
+.line-height{
+    line-height: 35px;
+}
+#grey-button{
+    border-radius: 7px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #FD46B3;
+    padding: 15px 25px;
+    border:none;
+    background-color:#F6F3F5 ;
+}
+#grey-button:hover{
+    color: white;
+    background-color:#FF42B3 ;
+    transition: all 0.3s ease-in-out;
+}
+.USPs{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px; 
+}
+.USPs ul>li:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+}
+.USPs ul>li:nth-child(3){
+    font-size: 17px;
+    color: rgb(94, 94, 94);
+}
+.features-line::before{
+    content: "";
+    position: absolute;
+    z-index: -3;
+    height: 70%;
+    width: 120%;
+    background-color: #F6F3F5;
+    right: -0.1px;
+    top: -150px;
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
+.features-line::after{
+    content: "";
+    position: absolute;
+    z-index: -3;
+    height: 70%;
+    width: 120%;
+    background-color: #F6F3F5;
+    right: -0.1px;
+    bottom: -235px;
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
+.features{
+    z-index: 2;
+    position: relative;
+    background-color: #F6F3F5;
+    margin-top: 200px;
+}
+.call-to-action{
+    height: 100%;
+    z-index: 5;
+}
+.cta-background{
+    background-image: url("./assets/800x0.jpg");
+    background-position: center;
+    background-color: #cccccc;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.cta-background::before{
+    z-index: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 23, 23, 0.700);
+}
+.cta-container{
+    margin-top: 150px;
+    z-index: 2;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.cta-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cta-text{
+    text-align: center;
+    color: white;
+}
+.cta-text h2{
+    font-size: 45px;
+    font-weight: 900;
+}
+.cta-text h5{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+.cta-btn{
+    border-radius: 5px;
+    border: none;
+    padding: 13px 27px;
+    background-color: #FF42B3;
+    color: white;
+    font-weight: 900;
+    font-size:15px;
+}
+.cta-btn:hover{
+    transition: all 0.3s;
+    background-color: #ff099d;
+}
+.storyshell-numbers{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid white;
+    color: white;
+}
+.storyshell-numbers h3{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.storyshell-numbers h5{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer-first{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.footer-ul{
+text-align: right;
+}
+.footer-second{
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+.footer-second a:hover, .footer-first a:hover{
+    color: #FD46B3;
+}
+
